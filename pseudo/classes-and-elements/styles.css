@@ -1,0 +1,26 @@
+article p:first-child {
+  font-size: 120%;
+  font-weight: bold;
+}
+p:hover {
+  color: blue;
+}
+article p:last-child {
+  background-color: orange;
+}
+article p::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+::selection {
+  background-color:red; 
+}
+article p::first-letter {
+  background-color:yellow;
+  border: 1px solid black;
+  font-size: 2rem;
+}
+article::before {
+  content: 'This should show before the article. ';
+  background-color: yellow;
+}
