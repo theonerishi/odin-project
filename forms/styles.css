@@ -1,0 +1,69 @@
+:root {
+    --form-bgc: #aaa;
+}
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+label, textarea, button {
+    margin: 10px auto;
+    display: block;
+}
+textarea{
+    width: 70%
+}
+form {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--form-bgc);
+}
+button {
+    border-radius: 5px;
+    background-color: var(--form-bgc);
+    padding: 10px;
+}
+body {
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+.right {
+    width: 50%;
+    height: 100%;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+label {
+    margin: 10px auto;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+}
+input:invalid {
+    border: 1px solid red;
+    outline: none;
+}
+.note {
+    font-weight: bold;
+}
