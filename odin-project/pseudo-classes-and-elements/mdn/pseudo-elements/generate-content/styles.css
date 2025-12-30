@@ -1,0 +1,4 @@
+.box::after {
+  content: " This should show after the other content. The value of this pseudo element has been changed. ";
+  background-color: yellow;
+}
