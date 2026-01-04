@@ -1,6 +1,6 @@
 let div = document.querySelector('#answer');
 let form = document.querySelector('form');
-let input = document.querySelector('input[type="text"]');
+//let input = document.querySelector('input[type="text"]');
 let equalsButton = document.querySelector('#equals');
 let buttons = document.querySelectorAll('button');
 str = '';

@@ -1,4 +1,16 @@
 const myLibrary = [];
+class Book {
+    constructor(title, author, pages, read, id) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.id = id;
+    }
+    info() {
+        return `${this.title} by ${this.author}, ${this.pages} pages long is ${this.read ? 'read' : 'not read'}`
+    }
+}/*
 function Book(title, author, pages, read, id) {
     this.title = title;
     this.author = author;
@@ -9,6 +21,7 @@ function Book(title, author, pages, read, id) {
         return `${this.title} by ${this.author}, ${this.pages} pages long, is ${this.read ? 'read' : 'not read'}`;
     }
 }
+    */
 function addBookToLibrary(book) {
     let id = crypto.randomUUID();
     book.id = id;
@@ -66,7 +79,7 @@ function renderBooks() {
         bookDiv.appendChild(bookInfo);
         bookDiv.appendChild(removeButton);
         div.appendChild(bookDiv);
-        div.appendChild(document.createElement('br'));
+        // div.appendChild(document.createElement('br'));
     }
 }
 

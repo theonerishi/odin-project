@@ -1,0 +1,43 @@
+<!doctype html>
+<style>
+    * {
+        font-size: 2rem;
+    }
+</style>
+<body></body>
+<script>
+class Clock { // define class for clock
+    constructor(template) {
+        this.template = template; // store template in variable
+    }
+
+    render() {
+        let date = new Date(); // find current date
+
+        let hours = date.getHours();
+        if (hours < 10) hours = '0' + hours; // if number less than 10 add 0 to the beginning
+
+        let mins = date.getMinutes();
+        if (mins < 10) mins = '0' + mins;
+
+        let secs = date.getSeconds();
+        if (secs < 10) secs = '0' + secs;
+
+        let output = this.template
+            .replace('h', hours)
+            .replace('m', mins)
+            .replace('s', secs); // replace h, m and s with hours, mins and seconds
+
+        document.body.innerText = output + '\n'; // print to screen
+    }
+
+    start() {
+        this.render();
+        setInterval(() => this.render(), 1000); // run render function every second
+    }
+}
+
+let clock = new Clock('h:m:s');
+clock.start();
+</script>
+</html>
