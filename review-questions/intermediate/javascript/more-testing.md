@@ -13,7 +13,7 @@ fake input into a function to test it
 # When would you use a mock function?
 when code cannot be decoupled
 # How should you test incoming query messages?
-
+through mock functions
 # Why should you not test implementation?
 
 # Should you test private methods?
