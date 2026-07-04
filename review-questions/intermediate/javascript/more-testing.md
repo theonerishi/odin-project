@@ -15,7 +15,8 @@ when code cannot be decoupled
 # How should you test incoming query messages?
 through mock functions
 # Why should you not test implementation?
-
+the test may depend on implementation details that will make it give the incorrect results
 # Should you test private methods?
-
+No there is no need to test private methods its better to keep it simple and have fewer tests
 # Why should you not test outgoing messages with no side effects?
+its because this might tie the developer to the implementation details
